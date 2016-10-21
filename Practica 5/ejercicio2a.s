@@ -26,6 +26,12 @@ li $v0, 10
 syscall		# Fin del programa
 
 funcion:
+	### PARAMETROS ###
+	# $a0: número decimal codificado en ASCII
+
+	### RETURN ###
+	# $v0: retorna el parámetro convertido a binario
+	
 	li $s5, 45		# Para comprobar si es negativo (el guion es 45 en ASII)
 	li $s1, 10		# Para multiplicar por 10 los valores decimales, y ademas para comprobar si un caracter es salto de linea
 	lb $t7, 0($a0)		# Cargamos primer caracter

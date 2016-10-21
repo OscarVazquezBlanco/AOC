@@ -18,9 +18,7 @@ syscall
 
 jal funcion
 
-add $t5, $v0, $zero # Metemos el resultado en $t5 para utilizarlo después
-
-add $a0, $t5, $zero
+add $a0, $v0, $zero
 li $v0, 1	
 syscall		# Imprime el resultado
 

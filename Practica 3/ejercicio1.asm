@@ -37,7 +37,9 @@ li $v0, 10
 syscall		# exit
 
 funcion:
-
+	### PARAMETROS ###
+	# $a0: número en binario
+	# $a1: dirección donde se guarda el número en hexadecimal
 	add $t0, $a0, $zero
 	bucle:
 		andi $t1, $t0, 0xF0000000
